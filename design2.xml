@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+	<!--
+		Written by Sridhar Chimalakonda, enthusiastic2learn@gmail.com
+
+		Key Commandement: Do not hard code anything as your program has to work for all 22 Indian
+		Languages
+
+		There will be 25 lessons at max in a given design
+		Each design can have 1 to 25 lessons
+		Each lesson will have 1 title, "n" number of letters and matras {म, न, क, ा} - remember that
+		there could be other letters from other than title - for example, व could also be a letter
+		for the same title!
+		Each lesson will also have "n" number of words corresponding to each letter/matra and
+		each word has to be animated similar to title and animation of the corresponding letter
+		in different color patterns (Pleas see TCS CBFL animation software for example)
+
+		There are two kinds of sounds (i) sounds of letters/words {म sound, मन sound...}
+		(ii) sounds that guide the learners {अब आपलोग इसे पहचानकर बताईये ये कोनसा अक्शर हैँ?, अब आपलोग मेरे साथ साथ बोलिए }
+		For every letter falling down, there will be a sound associated with it and there could
+		be an instruction associated with it as well.. so leaving scope for playing
+		sound with every animation..
+
+-->
+
+<design type="nested">
+
+    <language type="text">
+        Hindi           <!--language for design -->
+    </language>
+    <backgroundimage type="text">
+        invention.jpg        <!-- Path for background-image -->
+    </backgroundimage>
+    <backgroundcolor type="text">
+        yellow          <!-- Can be a standard HTML colors, in Hex {e.g. #AA11FF} or in rgb { e.g. rgb(130,225,100) } -->
+    </backgroundcolor>
+    <colortheme type="text">
+        {blue, red}
+                    <!--
+                    Can be a standard HTML colors, in Hex {e.g. #AA11FF} or in rgb { e.g. rgb(130,225,100) }.
+                    In form {color1, color2},
+                    where color1 is normal text color,
+                    and color2 is the color used for highlighting.
+                    -->
+    </colortheme>
+    <animationstyle type="text">
+        fallingletters
+    </animationstyle>
+    <animationspeed type="text">
+        slow        <!-- Can be slow, fast or withsound -->
+    </animationspeed>
+    <sizeofletters type="text">
+        large      <!-- Can be small, medium or large -->
+    </sizeofletters>
+
+    <menu type="nested">
+        <title type="text">
+            पाठ 1
+        </title>
+        <backgroundimage type="text">
+            menu.jpg
+        </backgroundimage>
+        <backgroundcolor type="text">
+            black
+        </backgroundcolor>
+        <colortheme type="text">
+            white
+        </colortheme>
+    </menu>
+
+	<imagefornextbutton type="text">right.png</imagefornextbutton>
+    <imageforpreviousbutton type="text">left.png</imageforpreviousbutton>
+    <imageformenubutton type="text"></imageformenubutton>
+    <imageforhandandstick type="text" title="Image for hand and stick">handandstick.png</imageforhandandstick>
+
+    <lesson type="nested" multiple="true">
+        <title type="text">
+            मन का काम
+        </title>
+        <instructions type="nested">
+            <start type="nested">
+                <sound type="text">sounds/hsounds/instruction1.wav</sound>
+                <image type="text">./namaskar.png</image>
+            </start>
+            <middle type="nested">
+                <text type="text">Some text to appear with the sound</text>
+                <sound type="text">sounds/hsounds/instruction2.wav</sound>
+                <image type="text">./namaskar.png</image>
+            </middle type="nested">
+            <end type="nested">
+                <sound type="text">sounds/hsounds/instruction1.</sound>
+                <image type="text">./namaskar.png</image>
+            </end>
+        </instructions>
+        <goals type="nested" multiple="true">
+            <goal>
+                <text type="text">इस पाठ में हमारा लक्ष्य {म, न} को पढना</text>
+                <sound type="text">sounds/goal.wav</sound>
+            </goal>
+            <goal>
+                <text type="text">इस पाठ में हमारा लक्ष्य {म, न} को पहचानना</text>
+                <sound type="text">sounds/goal.wav</sound>
+            </goal>
+        </goals>
+        <letters type="nested">
+            <letter type="nested" multiple="true">
+                <text type="text">म</text>
+                <sound type="text">sounds/hsounds/ma.wav</sound>
+                <instructions type="nested">
+                    <start type="nested">
+                        <sound type="text">sounds/hsounds/instruction1.wav</sound>
+                        <image type="text">./namaskar.png</image>
+                    </start>
+                    <middle type="nested">
+                        <sound type="text">sounds/hsounds/instruction2.wav</sound>
+                        <image type="text">./namaskar.png</image>
+                    </middle>
+                    <end type="nested">
+                        <sound type="text">sounds/hsounds/instruction1.wav</sound>
+                        <image type="text">./namaskar.png</image>
+                    </end>
+                </instructions>
+                <words type="nested">
+                    <word type="nested" multiple="true">
+                        <text type="text">मकान</text>
+                        <sound type="text">sounds/hsounds/makaan.wav</sound>
+                        <image type="text">./house.jpg</image>
+                    </word>
+                </words>
+            </letter>
+            <letter type="nested" multiple="true">
+                <text type="text">न</text>
+                <sound type="text">sounds/hsounds/na.wav</sound>
+                <instructions type="nested">
+                    <start type="nested">
+                        <sound type="text">sounds/hsounds/instruction1.wav</sound>
+                        <image type="text">./namaskar.png</image>
+                    </start>
+                    <middle type="nested">
+                        <sound type="text">sounds/hsounds/instruction2.wav</sound>
+                        <image type="text">./namaskar.png</image>
+                    </middle>
+                    <end type="nested">
+                        <sound type="text">sounds/hsounds/instruction1.wav</sound>
+                        <image type="text">./namaskar.png</image>
+                    </end>
+                </instructions>
+                <words type="nested">
+			        <word type="nested" multiple="true">
+                        <text type="text">नम</text>
+                        <sound type="text">sounds/word.wav</sound>
+                    </word>
+
+			        <word type="nested" multiple="true">
+                        <text type="text">मन</text>
+                        <sound type="text">sounds/word.wav</sound>
+                    </word>
+                    <word type="nested" multiple="true">
+                        <text type="text">नाम</text>
+                        <sound type="text">sounds/word.wav</sound>
+                        <image type="text">./flower.png</image>
+                    </word>
+                    <word type="nested" multiple="true">
+                        <text type="text">नर</text>
+                        <sound type="text">sounds/word.wav</sound>
+                        <image type="text">./flower.png</image>
+                    </word>
+
+                </words>
+            </letter>
+	 
+
+                </words>
+            </letter>
+	    </letters>
+    </lesson>
+
+</design>

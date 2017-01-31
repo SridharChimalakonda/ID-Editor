@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+	<!--
+		Written by Sridhar Chimalakonda, enthusiastic2learn@gmail.com
+
+		Key Commandement: Do not hard code anything as your program has to work for all 22 Indian
+		Languages
+
+		There will be 25 lessons at max in a given design
+		Each design can have 1 to 25 lessons
+		Each lesson will have 1 title, "n" number of letters and matras {म, न, क, ा} - remember that
+		there could be other letters from other than title - for example, व could also be a letter
+		for the same title!
+		Each lesson will also have "n" number of words corresponding to each letter/matra and
+		each word has to be animated similar to title and animation of the corresponding letter
+		in different color patterns (Pleas see TCS CBFL animation software for example)
+
+		There are two kinds of sounds (i) sounds of letters/words {म sound, मन sound...}
+		(ii) sounds that guide the learners {अब आपलोग इसे पहचानकर बताईये ये कोनसा अक्शर हैँ?, अब आपलोग मेरे साथ साथ बोलिए }
+		For every letter falling down, there will be a sound associated with it and there could
+		be an instruction associated with it as well.. so leaving scope for playing
+		sound with every animation..
+
+-->
+
+<design>
+    <language>
+        Hindi           <!--language for design -->
+    </language>
+    <backgroundimage>
+        invention.jpg        <!-- Path for background-image -->
+    </backgroundimage>
+    <backgroundcolor>
+        yellow          <!-- Can be a standard HTML colors, in Hex {e.g. #AA11FF} or in rgb { e.g. rgb(130,225,100) } -->
+    </backgroundcolor>
+    <colortheme>
+        {blue, red}
+                    <!--
+                    Can be a standard HTML colors, in Hex {e.g. #AA11FF} or in rgb { e.g. rgb(130,225,100) }.
+                    In form {color1, color2},
+                    where color1 is normal text color,
+                    and color2 is the color used for highlighting.
+                    -->
+    </colortheme>
+    <animationstyle>
+        fallingletters
+    </animationstyle>
+    <animationspeed>
+        slow        <!-- Can be slow, fast or withsound -->
+    </animationspeed>
+    <sizeofletters>
+        large      <!-- Can be small, medium or large -->
+    </sizeofletters>
+
+    <menu>
+        <title>
+            पाठ 1
+        </title>
+        <backgroundimage>
+            menu.jpg
+        </backgroundimage>
+        <backgroundcolor>
+            black
+        </backgroundcolor>
+        <colortheme>
+            white
+        </colortheme>
+    </menu>
+
+	<imagefornextbutton>right.png</imagefornextbutton>
+    <imageforpreviousbutton>left.png</imageforpreviousbutton>
+    <imageformenubutton></imageformenubutton>
+    <imageforhandandstick>handandstick.png</imageforhandandstick>
+
+    <lesson>
+        <title>
+            मन का काम
+        </title>
+        <instructions>
+            <start>
+                <sound>sounds/hsounds/instruction1.wav</sound>
+                <image>./namaskar.png</image>
+            </start>
+            <middle>
+                <text>Some text to appear with the sound</text>
+                <sound>sounds/hsounds/instruction2.wav</sound>
+                <image>./namaskar.png</image>
+            </middle>
+            <end>
+                <sound>sounds/hsounds/instruction1.</sound>
+                <image>./namaskar.png</image>
+            </end>
+        </instructions>
+        <goals>
+            <goal>
+                <text>इस पाठ में हमारा लक्ष्य {म, न} को पढना</text>
+                <sound>sounds/goal.wav</sound>
+            </goal>
+            <goal>
+                <text>इस पाठ में हमारा लक्ष्य {म, न} को पहचानना</text>
+                <sound>sounds/goal.wav</sound>
+            </goal>
+        </goals>
+        <letters>
+            <letter>
+                <text>म</text>
+                <sound>sounds/hsounds/ma.wav</sound>
+                <instructions>
+                    <start>
+                        <sound>sounds/hsounds/instruction1.wav</sound>
+                        <image>./namaskar.png</image>
+                    </start>
+                    <middle>
+                        <sound>sounds/hsounds/instruction2.wav</sound>
+                        <image>./namaskar.png</image>
+                    </middle>
+                    <end>
+                        <sound>sounds/hsounds/instruction1.wav</sound>
+                        <image>./namaskar.png</image>
+                    </end>
+                </instructions>
+                <words>
+                    <word>
+                        <text>मकान</text>
+                        <sound>sounds/hsounds/makaan.wav</sound>
+                        <image>./house.jpg</image>
+                    </word>
+                </words>
+            </letter>
+            <letter>
+                <text>न</text>
+                <sound>sounds/hsounds/na.wav</sound>
+                <instructions>
+                    <start>
+                        <sound>sounds/hsounds/instruction1.wav</sound>
+                        <image>./namaskar.png</image>
+                    </start>
+                    <middle>
+                        <sound>sounds/hsounds/instruction2.wav</sound>
+                        <image>./namaskar.png</image>
+                    </middle>
+                    <end>
+                        <sound>sounds/hsounds/instruction1.wav</sound>
+                        <image>./namaskar.png</image>
+                    </end>
+                </instructions>
+                <words>
+			        <word>
+                        <text>नम</text>
+                        <sound>sounds/word.wav</sound>
+                    </word>
+
+			        <word>
+                        <text>मन</text>
+                        <sound>sounds/word.wav</sound>
+                    </word>
+                    <word>
+                        <text>नाम</text>
+                        <sound>sounds/word.wav</sound>
+                        <image>./flower.png</image>
+                    </word>
+                    <word>
+                        <text>नर</text>
+                        <sound>sounds/word.wav</sound>
+                        <image>./flower.png</image>
+                    </word>
+
+                </words>
+            </letter>
+	        <letter>
+                <text>क</text>
+                <sound>sounds/hsounds/ka.wav</sound>
+                <instructions>
+                    <start>
+                        <sound>sounds/hsounds/instruction1.wav</sound>
+                        <image>./namaskar.png</image>
+                    </start>
+                    <middle>
+                        <sound>sounds/hsounds/instruction2.wav</sound>
+                        <image>./namaskar.png</image>
+                    </middle>
+                    <end>
+                        <sound>sounds/hsounds/instruction1.wav</sound>
+                        <image>./namaskar.png</image>
+                    </end>
+                </instructions>
+                <words>
+			        <word>
+                        <text>कम</text>
+                        <sound>sounds/word.wav</sound>
+                    </word>
+
+			        <word>
+                        <text>कनक</text>
+                        <sound>sounds/word.wav</sound>
+                    </word>
+                    <word>
+                        <text>नमक</text>
+                        <sound>sounds/word.wav</sound>
+                        <image>./flower.png</image>
+                    </word>
+                    <word>
+                        <text>कथा</text>
+                        <sound>sounds/word.wav</sound>
+                        <image>./flower.png</image>
+                    </word>
+
+                </words>
+            </letter>
+	    </letters>
+    </lesson>
+
+</design>

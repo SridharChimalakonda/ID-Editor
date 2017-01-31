@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<design type="nested">
+    <language type="text">हिनदि</language>
+    <backgroundimage type="text"></backgroundimage>
+    <backgroundanimation type="text">Bounce</backgroundanimation>
+    <backgroundcolor type="text"></backgroundcolor>
+    <colortheme type="text"></colortheme>
+    <animationstyle type="text"></animationstyle>
+    <animationspeed type="text"></animationspeed>
+    <sizeofletters type="text"></sizeofletters>
+    <imagefornextbutton type="text"></imagefornextbutton>
+    <imageforpreviousbutton type="text"></imageforpreviousbutton>
+    <imageformenubutton type="text"></imageformenubutton>
+    <imageforhandandstick type="text" title="Image for hand and stick"></imageforhandandstick>
+    <menu type="nested">
+        <title type="text"></title>
+        <backgroundimage type="text"></backgroundimage>
+        <backgroundcolor type="text"></backgroundcolor>
+        <colortheme type="text"></colortheme>
+    </menu>
+    <lesson type="nested" multiple="true">
+        <title type="text"></title>
+        <instructions type="nested">
+            <start type="nested">
+                <sound type="text"></sound>
+                <image type="text"></image>
+            </start>
+            <middle type="nested">
+                <sound type="text"></sound>
+                <image type="text"></image>
+            </middle>
+            <end type="nested">
+                <sound type="text"></sound>
+                <image type="text"></image>
+            </end>
+        </instructions>
+        <goals type="nested">
+            <goal type="nested" multiple="true">
+                <text type="text"></text>
+                <sound type="text"></sound>
+            </goal>
+        </goals>
+        <letters type="nested">
+            <letter type="nested" multiple="true">
+                <text type="text"></text>
+                <sound type="text"></sound>
+                <instructions type="nested">
+                    <start type="nested">
+                        <sound type="text"></sound>
+                        <image type="text"></image>
+                    </start>
+                    <middle type="nested">
+                        <sound type="text"></sound>
+                        <image type="text"></image>
+                    </middle>
+                    <end type="nested">
+                        <sound type="text"></sound>
+                        <image type="text"></image>
+                    </end>
+                </instructions>
+                <words type="nested">
+                    <word type="nested" multiple="true">
+                        <text type="text"></text>
+                        <sound type="text"></sound>
+                        <image type="text"></image>
+                    </word>
+                </words>
+            </letter>
+        </letters>
+    </lesson>
+</design>
